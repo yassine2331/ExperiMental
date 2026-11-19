@@ -1,0 +1,67 @@
+# Markdown notes stay local (README is the only exception)
+*.md
+!/README.md
+# Claude Code traces
+.claude/
+CLAUDE.md
+CLAUDE.local.md
+
+# Data: sensitive participant data, never commit (whole folder ignored)
+data/
+# Raw data files anywhere in the repo
+*.csv
+*.tsv
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.fit
+*.db
+*.sqlite
+*.xlsx
+*.zip
+
+# Model artifacts
+models/checkpoints/**
+models/exported/**
+!models/**/.gitkeep
+experiments/runs/**
+!experiments/runs/.gitkeep
+mlruns/
+wandb/
+outputs/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.env
+
+# Android
+deploy/android/**/build/
+deploy/android/.gradle/
+deploy/android/local.properties
+*.apk
+*.aab
+
+# iOS
+deploy/ios/**/DerivedData/
+deploy/ios/**/xcuserdata/
+deploy/ios/Pods/
+
+# Garmin Connect IQ
+deploy/garmin/bin/
+*.prg
+*.iq
+developer_key*
+
+# OS / IDE
+.DS_Store
+.idea/
+.vscode/
