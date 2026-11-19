@@ -7,10 +7,9 @@ prediction to be different?").
 
 The workflow is:
 
-1. **Collect** sensor data from phones and watches, together with EMA responses.
-2. **Train** models (classical ML and deep learning) to predict the EMA responses.
-3. **Run** the models on the devices and measure how well they perform there.
-4. **Explain** the predictions with counterfactual explanations.
+1. **Train** models (classical ML and deep learning) to predict the EMA responses.
+2. **Run** the models on the devices and measure how well they perform there.
+3. **Explain** the predictions with counterfactual explanations.
 
 > Participant data is sensitive and is never committed to this repository.
 
